@@ -10,7 +10,5 @@ jobs:
         - 3000     
     steps:
       - uses: actions/checkout@v4
-        with:
-          node-version: 19
       - run: npm install
       - run: npm run lint
