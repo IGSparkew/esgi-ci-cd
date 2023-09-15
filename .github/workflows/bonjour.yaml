@@ -4,9 +4,12 @@ on:
 jobs:
   dire_bonjour:
     runs-on: ubuntu-22.04
+    container:
+      image: ghcr.io/dduportal/esgi-gitpod
+      ports:
+        - 3000     
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
         with:
           node-version: 19
       - run: npm install
