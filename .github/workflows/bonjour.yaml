@@ -5,7 +5,7 @@ jobs:
   dire_bonjour:
     runs-on: ubuntu-22.04
     env:
-      IMAGE_NAME: "bonjourNode:19"   
+      IMAGE_NAME: "bonjour_node:19"   
     steps:
       - uses: actions/checkout@v3
       - run: docker image build --tag="${IMAGE_NAME}" ./
